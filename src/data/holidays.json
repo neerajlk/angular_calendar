@@ -1,0 +1,163 @@
+[
+    {
+        "date": "January 01",
+        "day": 1,
+        "weekday": "Tuesday",
+        "holiday": "New Year",
+        "description": "New Year's Day, also simply called New Year or New Year's, is observed on January 1, the first day of the year."
+    },
+    {
+        "date": "January 26",
+        "day": 26,
+        "weekday": "Saturday",
+        "holiday": "Republic Day",
+        "description": "It is a day to remember when India's constitution came into force on January 26, 1950, completing the country's transition toward becoming an independent republic."
+    },
+    {
+        "date": "March 21",
+        "day": 80,
+        "weekday": "Thursday",
+        "holiday": "Holi",
+        "description": "Holi; is a popular ancient Hindu festival of Colors, originating from the Indian subcontinent."
+    },
+    {
+        "date": "April 01",
+        "day": 91,
+        "weekday": "Monday",
+        "holiday": "Bank Holiday",
+        "description": "Annual Account Closing Day."
+    },
+    {
+        "date": "April 06",
+        "day": 96,
+        "weekday": "Saturday",
+        "holiday": "Gudi Padwa",
+        "description": "Gudhi Padwa and Konkani: संवसर पाडवो, Sanvsar Pādvo is a spring-time festival that marks the traditional new year for Marathi and Konkani Hindus."
+    },
+    {
+        "date": "April 14",
+        "day": 104,
+        "weekday": "Sunday",
+        "holiday": "Ambedkar jayanti",
+        "description": "Babasaheb Dr. B.R. Ambedkar's birthday who was born on 14 April 1891."
+    },
+    {
+        "date": "April 17",
+        "day": 107,
+        "weekday": "Wednesday",
+        "holiday": "Mahavir Jayanti",
+        "description": "Mahaveer Janma Kalyanak, is one of the most important religious festivals for Jains. It celebrates the birth of Mahaveer."
+    },
+    {
+        "date": "April 19",
+        "day": 109,
+        "weekday": "Friday",
+        "holiday": "Good Friday",
+        "description": "Good Friday is a Christian holiday commemorating the crucifixion of Jesus and his death at Calvary."
+    },
+    {
+        "date": "April 23",
+        "day": 113,
+        "weekday": "Tuesday",
+        "holiday": "Lok Sabha Elections",
+        "description":"Indian General Election for Lower House of the Parliament."
+    },
+    {
+        "date": "May 01",
+        "day": 121,
+        "weekday": "Wednesday",
+        "holiday": "May Day",
+        "description":"celebration of labourers and the working classes that is promoted by the international labour movement which occurs every year on May Day."
+    },
+    {
+        "date": "June 05",
+        "day": 156,
+        "weekday": "Wednesday",
+        "holiday": "Id-ul-Fitr",
+        "description":"Eid al-Fitr, also called the Festival of Breaking the Fast, is an important religious holiday celebrated by Muslims worldwide that marks the end of Ramadan, the Islamic holy month of fasting."
+    },
+    {
+        "date": "August 12",
+        "day": 224,
+        "weekday": "Monday",
+        "holiday": "Id-ul-Juha (Bakrid)",
+        "description":"the Festival of the Sacrifice, is the second of two Islamic holidays celebrated worldwide each year, and considered the holier of the two."
+    },
+    {
+        "date": "August 15",
+        "day": 227,
+        "weekday": "Thursday",
+        "holiday": "Independence Day",
+        "description":"Independence Day is annually celebrated on 15 August, as a national holiday in India commemorating the nation's independence from the United Kingdom on 15 August 1947."
+    },
+    {
+        "date": "September 02",
+        "day": 245,
+        "weekday": "Monday",
+        "holiday": "Ganesh Chaturthi",
+        "description":"Hindu festival celebrating the birth of Ganesha. It falls in the months of August or September of the Gregorian calendar."
+    },
+    {
+        "date": "September 10",
+        "day": 253,
+        "weekday": "Tuesday",
+        "holiday": "Muharram",
+        "description":"Muḥarram is the first month of the Islamic calendar. It is one of the four sacred months of the year during which warfare is forbidden."
+    },
+    {
+        "date": "October 02",
+        "day": 275,
+        "weekday": "Wednesday",
+        "holiday": "Mahatma Gandhi Jayanti",
+        "description":"Gandhi Jayanti is a national festival celebrated in India to mark the birth anniversary of Mohandas Karamchand Gandhi born 2 October 1869."
+    },
+    {
+        "date": "October 08",
+        "day": 281,
+        "weekday": "Tuesday",
+        "holiday": "Dussehra",
+        "description":"Vijayadashami also known as Dasahara, Dusshera, Dasara, Dussehra or Dashain is a major Hindu festival celebrated at the end of Navratri every year."
+    },
+    {
+        "date": "October 27",
+        "day": 300,
+        "weekday": "Sunday",
+        "holiday": "Diwali",
+        "description":"Diwali, Deepavali or Dipavali is Hindu, Sikh and Jain festival of lights, which is celebrated every autumn in the northern hemisphere."
+    },
+    {
+        "date": "November 10",
+        "day": 314,
+        "weekday": "Sunday",
+        "holiday": "Id-e-Milad",
+        "description":"Mawlid or Mawlid al-Nabi al-Sharif is the observance of the birthday of Islamic prophet Muhammad which is commemorated in Rabi' al-awwal, the third month in the Islamic calendar."
+    },
+    {
+        "date": "November 11",
+        "day": 315,
+        "weekday": "Monday",
+        "holiday": "Guru Nanak Birthday",
+        "description":"Guru Nanak's Prakash Utsav and Guru Nanak Jayanti, celebrates the birth of the first Sikh Guru and Sindhi Community in Guru Guru Nanak."
+    },
+    {
+        "date": "December 03",
+        "day": 337,
+        "weekday": "Tuesday",
+        "holiday": "St.Francis Xavier Feast",
+        "description":"Francis Xavier is the patron saint of his native Navarre, which celebrates his feast day on 3 December as a government holiday."
+    },
+    {
+        "date": "December 19",
+        "day": 353,
+        "weekday": "Thursday",
+        "holiday": "Goa Liberation Day",
+        "description":"The Annexation of Goa was the process in which the Republic of India annexed the former Portuguese Indian territories of Goa, Daman and Diu, starting with the 'armed action' carried out by the Indian Armed Forces in December 1961."
+    },
+    {
+        "date": "December 25",
+        "day": 359,
+        "weekday": "Wednesday",
+        "holiday": "Christmas",
+        "description":"Christmas is an annual festival commemorating the birth of Jesus Christ observed on December 25. as a religious and cultural celebration among billions of people around the world."
+    }
+]
