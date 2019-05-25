@@ -1,4 +1,10 @@
-.background{
+.background-red{
     background-color: red;
-    border: 1px 1px 1px 1px black
+    border-style: solid;
+    font-size: 14px
+}
+.background-burlywood{
+    background-color: burlywood;
+    border-style: solid;
+    font-size: 14px
 }

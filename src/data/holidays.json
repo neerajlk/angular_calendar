@@ -1,0 +1,110 @@
+[
+    {
+        "date": "January 01",
+        "day": 1,
+        "weekday": "Tuesday",
+        "holiday": "New Year"
+    },
+    {
+        "date": "January 26",
+        "day": 26,
+        "weekday": "Saturday",
+        "holiday": "Republic Day"
+    },
+    {
+        "date": "March 21",
+        "day": 26,
+        "weekday": "Thursday",
+        "holiday": "Holi"
+    },
+    {
+        "date": "April 01",
+        "day": 91,
+        "weekday": "Monday",
+        "holiday": "Bank Holiday"
+    },
+    {
+        "date": "April 17",
+        "day": 107,
+        "weekday": "Wednesday",
+        "holiday": "Mahavir Jayanti"
+    },
+    {
+        "date": "April 19",
+        "day": 109,
+        "weekday": "Friday",
+        "holiday": "Good Friday"
+    },
+    {
+        "date": "May 01",
+        "day": 121,
+        "weekday": "Wednesday",
+        "holiday": "May Day"
+    },
+    {
+        "date": "June 05",
+        "day": 156,
+        "weekday": "Wednesday",
+        "holiday": "Id-ul-Fitr"
+    },
+    {
+        "date": "August 12",
+        "day": 224,
+        "weekday": "Monday",
+        "holiday": "Id-ul-Juha (Bakrid)"
+    },
+    {
+        "date": "August 15",
+        "day": 227,
+        "weekday": "Thursday",
+        "holiday": "Independence Day"
+    },
+    {
+        "date": "September 02",
+        "day": 245,
+        "weekday": "Monday",
+        "holiday": "Ganesh Chaturthi"
+    },
+    {
+        "date": "September 10",
+        "day": 253,
+        "weekday": "Tuesday",
+        "holiday": "Muharram"
+    },
+    {
+        "date": "October 02",
+        "day": 275,
+        "weekday": "Wednesday",
+        "holiday": "Mahatma Gandhi Jayanti"
+    },
+    {
+        "date": "October 08",
+        "day": 281,
+        "weekday": "Tuesday",
+        "holiday": "Dussehra"
+    },
+    {
+        "date": "October 27",
+        "day": 300,
+        "weekday": "Sunday",
+        "holiday": "Diwali"
+    },
+    {
+        "date": "November 10",
+        "day": 314,
+        "weekday": "Sunday",
+        "holiday": "Diwali"
+    },
+    {
+        "date": "November 11",
+        "day": 315,
+        "weekday": "Monday",
+        "holiday": "Guru Nanak Birthday"
+    },
+    {
+        "date": "December 25",
+        "day": 359,
+        "weekday": "Wednesday",
+        "holiday": "Christmas"
+    }
+]
