@@ -13,7 +13,7 @@
     },
     {
         "date": "March 21",
-        "day": 26,
+        "day": 80,
         "weekday": "Thursday",
         "holiday": "Holi"
     },
@@ -22,6 +22,18 @@
         "day": 91,
         "weekday": "Monday",
         "holiday": "Bank Holiday"
+    },
+    {
+        "date": "April 06",
+        "day": 96,
+        "weekday": "Saturday",
+        "holiday": "Gudi Padwa"
+    },
+    {
+        "date": "April 14",
+        "day": 104,
+        "weekday": "Sunday",
+        "holiday": "Ambedkar jayanti"
     },
     {
         "date": "April 17",
@@ -34,6 +46,12 @@
         "day": 109,
         "weekday": "Friday",
         "holiday": "Good Friday"
+    },
+    {
+        "date": "April 23",
+        "day": 113,
+        "weekday": "Tuesday",
+        "holiday": "Lok Sabha Elections"
     },
     {
         "date": "May 01",
@@ -93,13 +111,25 @@
         "date": "November 10",
         "day": 314,
         "weekday": "Sunday",
-        "holiday": "Diwali"
+        "holiday": "Id-e-Milad"
     },
     {
         "date": "November 11",
         "day": 315,
         "weekday": "Monday",
         "holiday": "Guru Nanak Birthday"
+    },
+    {
+        "date": "December 03",
+        "day": 337,
+        "weekday": "Tuesday",
+        "holiday": "St.Francis Xavier Feast"
+    },
+    {
+        "date": "December 19",
+        "day": 353,
+        "weekday": "Thursday",
+        "holiday": "Goa Liberation Day"
     },
     {
         "date": "December 25",
