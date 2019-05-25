@@ -1,50 +1,67 @@
-<div class="container">
-  <div class="row ml-auto text-center">
-    <label class="align-middle">Select Month</label>
-    <select [(ngModel)]="selectedMonth" (ngModelChange)="getDaysByMonth()">
-      <option *ngFor="let month of monthNumber" [ngValue]="month">{{months[month]}}</option>
-    </select>
+<div class="container px-5 py-0 font-roman">
+  <div class="row mx-0 text-center w-100 selection-background font-weight-bold">
+    <div class="col align-self-center align-middle mt-1">
+      <h3>Calendar For The Year {{selectedYear}}</h3>
+    </div>
   </div>
-  <div class="row mx-0 my-5 px-0 py-0">
-    
-    <div *ngFor="let day of dayInfo" (click)="getInfoOfTheDay(day.yearDay)" class="col-2 mx-0 my-0 px-0 py-0">
+  <hr>
+  <div class="row mx-0 text-center w-100 selection-background font-weight-bold">
+    <div class="col align-self-center align-middle mt-2">
+      <label class="px-2 text-bold">Select Year </label>
+      <select [(ngModel)]="selectedYear" (ngModelChange)="getDaysByMonthAndYear()">
+        <option *ngFor="let year of year" [ngValue]="year">{{year}}</option>
+      </select>
+    </div>
+    <div class="col align-self-center align-middle mt-2">
+      <label class="px-2 text-bold">Select Month </label>
+      <select [(ngModel)]="selectedMonth" (ngModelChange)="getDaysByMonthAndYear()">
+        <option *ngFor="let month of monthNumber" [ngValue]="month">{{months[month]}}</option>
+      </select>
+    </div>
+  </div>
+  <hr>
+  <div class="row mx-0 my-0 px-0 py-0 ml-auto">
+
+    <div *ngFor="let day of dayInfo" (click)="getInfoOfTheDay(selectedYear,selectedMonth,day.day,day.yearDay)"
+      class="col-2 mx-0 my-0 px-0 py-0 hover-class">
       <div *ngIf="day.isHoliday" class="background-red">
-        {{day.day}} 
+        {{day.day}}
         <br>
         ({{day.weekday}})
       </div>
       <div *ngIf="!day.isHoliday" class="background-burlywood">
-        {{day.day}} 
+        {{day.day}}
         <br>
         ({{day.weekday}})
       </div>
     </div>
   </div>
-
-  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-    Launch demo modal
-  </button> -->
-
-  <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+  <hr>
+  <div class="row mx-0 my-0 px-0 py-0 text-center" *ngFor="let info of holidayInfo">
+    <div class="col-12">
+      <tr>
+        <th>Date</th>
+        <td>{{info.date}}</td>
+      </tr>
+      <tr>
+        <th>Day</th>
+        <td>{{info.day}}</td>
+      </tr>
+      <tr>
+        <th>Holiday</th>
+        <td>{{info.holiday}}</td>
+      </tr>
+      <tr>
+        <th>Description</th>
+        <td>{{info.description}}</td>
+      </tr>
     </div>
+
+    <div class="col align-self-center my-2">
+      <button class="btn btn-danger" (click)="holidayInfo=[]">Clear</button>
+    </div>
+
   </div>
-</div>
-</div>
 
 
+</div>

@@ -13,7 +13,10 @@ import holidays from '../data/holidays.json'
 
 export class AppComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
+  year: number[] = []
+  months: string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+  weekday: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   monthNumber: number[] = []
   selectedDate: any = ""
   startDateOfTheyear: any = ""
@@ -21,13 +24,13 @@ export class AppComponent implements OnInit {
   oneDayTime: number = 0
   dayOfTheYear: number = 0
   selectedMonth: number = 0
+  selectedYear: number = 2019
   dayInfo: { day: number, isHoliday: boolean, yearDay: number, weekday: string }[] = [];
-  weekday: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-  months : string[]=["January","February","March","April","May","June","July","August","September","October","November","December"]
+  holidayInfo: { date: string, day: string, holiday: string, description: string }[] = []
 
 
-  getDayOfTheyear(month, day) {
-    this.selectedDate = new Date(2019, month, day);
+  getDayOfTheyear(year,month, day) {
+    this.selectedDate = new Date(year, month, day);
     this.startDateOfTheyear = new Date(this.selectedDate.getFullYear(), 0, 0);
     this.dateDifference = (this.selectedDate - this.startDateOfTheyear) + ((this.startDateOfTheyear.getTimezoneOffset() - this.selectedDate.getTimezoneOffset()) * 60 * 1000);
     this.oneDayTime = 1000 * 60 * 60 * 24;
@@ -40,28 +43,42 @@ export class AppComponent implements OnInit {
     return new Date(year, month, 0).getDate();
   };
 
-  getDaysByMonth() {
+  getDaysByMonthAndYear() {
     let month = this.selectedMonth + 1
+    let year = this.selectedYear
     this.dayInfo = []
 
-    for (let i = 0; i < this.getDaysInMonth(month, 2019); i++) {
+    for (let i = 0; i < this.getDaysInMonth(month, year); i++) {
       let temp = { day: 0, isHoliday: false, yearDay: 0, weekday: "" }
       temp.day = i + 1
-      temp.weekday = this.weekday[(new Date(2019, month - 1, i + 1)).getDay()];
-      temp.yearDay = this.getDayOfTheyear(month - 1, temp.day)
+      temp.weekday = this.weekday[(new Date(year, month - 1, i + 1)).getDay()];
+      temp.yearDay = this.getDayOfTheyear(year,month - 1, temp.day)
       let index = holidays.findIndex(x => x.day === temp.yearDay);
-      if (index > -1) {
+      if (index > -1 && year == 2019) {
         temp.isHoliday = true
       }
       this.dayInfo.push(temp)
     }
   }
 
-  getInfoOfTheDay(yearDay) {
+  getInfoOfTheDay(year, month, day, yearDay) {
     let index = holidays.findIndex(x => x.day === yearDay);
-    if (index > -1) {
-      alert("Date: " + holidays[index].date + "  Day: " + holidays[index].weekday + "  Holiday: " + holidays[index].holiday)
+    this.holidayInfo = []
+    let info = { "date": "", "day": "", "holiday": "", "description": "" }
+    if (index > -1 && year ==2019) {
+      info.date = holidays[index].date
+      info.day = holidays[index].weekday
+      info.holiday = holidays[index].holiday
+      info.description = holidays[index].description
     }
+    else {
+      info.date = this.months[month] + ' ' + day
+      info.day = this.weekday[(new Date(year, month, day)).getDay()]
+      info.holiday = "Working Day"
+      info.description = ""
+    }
+
+    this.holidayInfo.push(info)
   }
 
   ngOnInit() {
@@ -70,9 +87,11 @@ export class AppComponent implements OnInit {
       this.monthNumber.push(i)
     }
 
-    this.getDaysByMonth()
+    for (let i = 2001; i < 2100; i++) {
+      this.year.push(i)
+    }
 
-    console.log(holidays)
+    this.getDaysByMonthAndYear()
   }
 
 

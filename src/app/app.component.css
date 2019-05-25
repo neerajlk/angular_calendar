@@ -1,10 +1,44 @@
+.font-roman{
+    font-family: "Times New Roman"
+}
 .background-red{
     background-color: red;
-    border-style: solid;
+    border: 2px solid #ddd;
     font-size: 14px
 }
 .background-burlywood{
     background-color: burlywood;
-    border-style: solid;
+    border: 2px solid #ddd;
     font-size: 14px
 }
+.selection-background{
+    background-color: #dedebf
+}
+
+ div.hover-class :hover { 
+    background-color:#dedebf
+  }
+
+  div.hover-class :active { 
+    background-color: rgb(103, 116, 103);
+  }
+
+
+/* table styles */
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+
+  td{
+    width:100%
+  }
