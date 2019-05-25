@@ -2,9 +2,10 @@
     font-family: "Times New Roman"
 }
 .background-red{
-    background-color: red;
+    background-color:#e25757;
     border: 2px solid #ddd;
-    font-size: 14px
+    font-size: 14px;
+    color:black
 }
 .background-burlywood{
     background-color: burlywood;
@@ -12,16 +13,25 @@
     font-size: 14px
 }
 .selection-background{
-    background-color: #dedebf
+    background-color: #dedebf;
 }
 
- div.hover-class :hover { 
+div.hover-class :hover { 
     background-color:#dedebf
-  }
+}
 
-  div.hover-class :active { 
+div.hover-class :active { 
     background-color: rgb(103, 116, 103);
-  }
+}
+
+hr{
+      border-top:1px solid rgba(0,0,0,0.3)
+}
+
+select {
+      width:25%;
+}
+
 
 
 /* table styles */
