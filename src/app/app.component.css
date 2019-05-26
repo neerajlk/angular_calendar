@@ -17,16 +17,15 @@
   background-image: linear-gradient(to left, rgba(25, 156, 16,0), rgba(25, 156, 16,0.7));
 
 }
+.background-india-gradient{
+  background-image: linear-gradient(to right, rgb(255, 165, 0) ,rgb(255, 255, 255) ,rgb(26, 192, 26));
+}
 .selection-background{
     background-image: linear-gradient(to left, rgba(212, 86, 13,0), rgba(212, 86, 13, 0.7));
 }
 
 div.hover-class :hover { 
     background-color:rgb(191, 189, 216)
-}
-
-div.hover-class :active { 
-    background-color: rgb(191, 189, 216);
 }
 
 hr{
@@ -57,3 +56,13 @@ table, td, th {
   td{
     width:100%
   }
+
+  /* 
+
+GitHub - https://github.com/neerajlk
+
+LinkedIn - https://www.linkedin.com/in/neeraj-kamat-06b073153/
+
+Stackoverflow - https://stackoverflow.com/users/10276417/neeraj-kamat
+  
+  */
