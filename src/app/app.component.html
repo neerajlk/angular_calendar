@@ -1,10 +1,10 @@
-<div class="container px-5 py-0 font-roman">
+<div class="container px-0 py-0 font-roman">
   <div class="row mx-0 text-center w-100 selection-background font-weight-bold">
     <div class="col align-self-center align-middle mt-1">
-      <h3><strong>Calendar For The Year {{selectedYear}}</strong></h3>
+      <h3 class="mb-0"><strong class="text-uppercase">Calendar For The Year {{selectedYear}}</strong></h3>
     </div>
   </div>
-  <hr>
+  <hr class="my-2">
   <div class="row mx-0 text-center w-100 selection-background font-weight-bold">
     <div class="col align-self-center align-middle mt-2">
       <label class="px-2 text-bold">Select Year </label>
@@ -19,48 +19,71 @@
       </select>
     </div>
   </div>
-  <hr>
+  <hr class="my-2">
   <div class="row mx-0 my-0 px-0 py-0 ml-auto">
 
     <div *ngFor="let day of dayInfo" (click)="getInfoOfTheDay(selectedYear,selectedMonth,day.day,day.yearDay)"
       class="col-2 mx-0 my-0 px-0 py-0 hover-class">
-      <div *ngIf="day.isHoliday" class="background-red">
+      <div *ngIf="day.isHoliday && day.weekday != 'Sunday'" class="background-blue-gradient"  title="Click To Get More Information">
         {{day.day}}
         <br>
         ({{day.weekday}})
       </div>
-      <div *ngIf="!day.isHoliday" class="background-burlywood">
+      <div *ngIf="day.weekday == 'Sunday'" class="background-white-gradient text-danger"  title="Click To Get More Information">
+        {{day.day}} #
+        <br>
+        ({{day.weekday}})
+      </div>
+      <div *ngIf="!day.isHoliday && day.weekday != 'Sunday'" class="background-white-gradient" title="Click To Get More Information">
         {{day.day}}
         <br>
         ({{day.weekday}})
       </div>
     </div>
   </div>
-  <hr>
-  <div class="row mx-0 my-0 px-0 py-0 text-center" *ngFor="let info of holidayInfo">
-    <div class="col-12">
-      <tr>
-        <th>Date</th>
-        <td>{{info.date}}</td>
-      </tr>
-      <tr>
-        <th>Day</th>
-        <td>{{info.day}}</td>
-      </tr>
-      <tr>
-        <th>Holiday</th>
-        <td>{{info.holiday}}</td>
-      </tr>
-      <tr>
-        <th>Description</th>
-        <td>{{info.description}}</td>
-      </tr>
+  <hr class="my-1">
+  <div class="row">
+    <div class="col align-self-center align-middle">
+      <span class="background-blue-gradient px-4"></span>
+      <span class="px-2"> - </span>
+      <label class="my-0">Bank Holidays(Year 2019 Only)</label>
     </div>
 
-    <div class="col align-self-center my-2">
-      <button class="btn btn-danger" (click)="holidayInfo=[]">Clear</button>
+    <div class="col align-self-center align-middle">
+      <span class="background-white-gradient text-danger px-3 my-0 align-middle">
+       #
+      </span>
+      <span class="px-2"> - </span>
+      <label class="my-0">Sunday</label>
     </div>
-
+    <div class="col align-self-center align-middle">
+      <label class="my-0 text-right float-right">* Click On The Date Cell To Get More Information</label>
+    </div>
+  </div>
+  <hr class="my-1">
+  <div class="row mx-0 my-2 px-0 py-0 text-center" *ngFor="let info of holidayInfo">
+    <div class="col-12 px-0 py-0">
+      <table class="background-green-gradient ">
+        <tr>
+          <th>Date</th>
+          <td>{{info.date}}
+              <a class="btn btn-danger float-right px-2 py-0 text-white" title="Clear" (click)="holidayInfo=[]">x</a>
+          </td>
+        </tr>
+        <tr>
+          <th>Day</th>
+          <td>{{info.day}}</td>
+        </tr>
+        <tr>
+          <th>Holiday</th>
+          <td>{{info.holiday}}</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>{{info.description}}</td>
+        </tr>
+      </table>
+    </div>
   </div>
 
 

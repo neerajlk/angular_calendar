@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   year: number[] = []
   selectedYear: number = 2019
   months: string[] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-  monthNumber: number[] = [] 
+  monthNumber: number[] = []
   selectedMonth: number = 0
   weekday: string[] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
   dayInfo: { day: number, isHoliday: boolean, yearDay: number, weekday: string }[] = [];
@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
 
   // to get days in a selected Month and Year
   getDaysByMonthAndYear() {
+    this.holidayInfo = []
     let month = this.selectedMonth + 1
     let year = this.selectedYear
     this.dayInfo = []
@@ -78,8 +79,8 @@ export class AppComponent implements OnInit {
     else {
       info.date = this.months[month] + ' ' + day
       info.day = this.weekday[(new Date(year, month, day)).getDay()]
-      info.holiday = "Working Day"
-      info.description = ""
+      info.holiday = "-"
+      info.description = "-"
     }
 
     this.holidayInfo.push(info)
