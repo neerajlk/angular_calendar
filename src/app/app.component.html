@@ -1,4 +1,4 @@
-<div class="container px-0 py-0 font-roman">
+<div class="container-fluid px-auto py-auto font-roman">
   <div class="row mx-0 text-center w-100 selection-background font-weight-bold">
     <div class="col align-self-center align-middle mt-1">
       <h3 class="mb-0"><strong class="text-uppercase">Calendar For The Year {{selectedYear}}</strong></h3>
@@ -24,17 +24,20 @@
 
     <div *ngFor="let day of dayInfo" (click)="getInfoOfTheDay(selectedYear,selectedMonth,day.day,day.yearDay)"
       class="col-2 mx-0 my-0 px-0 py-0 hover-class">
-      <div *ngIf="day.isHoliday && day.weekday != 'Sunday'" class="background-blue-gradient"  title="Click To Get More Information">
+      <div *ngIf="day.isHoliday && day.weekday != 'Sunday'" class="background-blue-gradient"
+        title="Click To Get More Information">
         {{day.day}}
         <br>
         ({{day.weekday}})
       </div>
-      <div *ngIf="day.weekday == 'Sunday'" class="background-white-gradient text-danger"  title="Click To Get More Information">
+      <div *ngIf="day.weekday == 'Sunday'" class="background-white-gradient text-danger"
+        title="Click To Get More Information">
         {{day.day}} #
         <br>
         ({{day.weekday}})
       </div>
-      <div *ngIf="!day.isHoliday && day.weekday != 'Sunday'" class="background-white-gradient" title="Click To Get More Information">
+      <div *ngIf="!day.isHoliday && day.weekday != 'Sunday'" class="background-white-gradient"
+        title="Click To Get More Information">
         {{day.day}}
         <br>
         ({{day.weekday}})
@@ -51,7 +54,7 @@
 
     <div class="col align-self-center align-middle">
       <span class="background-white-gradient text-danger px-3 my-0 align-middle">
-       #
+        #
       </span>
       <span class="px-2"> - </span>
       <label class="my-0 text-danger">Sunday</label>
@@ -67,7 +70,7 @@
         <tr>
           <th>Date</th>
           <td>{{info.date}}
-              <a class="btn btn-danger float-right px-2 py-0 text-white" title="Clear" (click)="holidayInfo=[]">x</a>
+            <a class="btn btn-danger float-right px-2 py-0 text-white" title="Clear" (click)="holidayInfo=[]">x</a>
           </td>
         </tr>
         <tr>
@@ -85,6 +88,24 @@
       </table>
     </div>
   </div>
-
+  <div class="row fixed-bottom background-india-gradient">
+    <div class="col text-right">
+      <a href="https://github.com/neerajlk" target="_blank">GitHub</a>
+    </div>
+    <div class="col text-center">
+      <a href="https://stackoverflow.com/users/10276417/neeraj-kamat">Stackoverflow</a>
+    </div>
+    <div class="col text-left">
+      <a href="https://www.linkedin.com/in/neeraj-kamat-06b073153/">LinkedIn</a>
+    </div>
+  </div>
 
 </div>
+
+<!-- 
+GitHub - https://github.com/neerajlk
+
+LinkedIn - https://www.linkedin.com/in/neeraj-kamat-06b073153/
+
+Stackoverflow - https://stackoverflow.com/users/10276417/neeraj-kamat
+ -->
