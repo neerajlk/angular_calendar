@@ -30,6 +30,7 @@ export class AppComponent implements OnInit {
   dayOfTheYear: number = 0
 
   // to get day of the year (eg: 28 February is 59th Day of the Year)
+  // logic taken from - 'https://stackoverflow.com/questions/8619879/javascript-calculate-the-day-of-the-year-1-366'
   getDayOfTheyear(year, month, day) {
     this.selectedDate = new Date(year, month, day);
     this.startDateOfTheyear = new Date(this.selectedDate.getFullYear(), 0, 0);
